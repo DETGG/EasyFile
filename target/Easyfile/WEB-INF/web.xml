@@ -1,0 +1,66 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <servlet>
+    <servlet-name>ResponseIOServlet</servlet-name>
+    <servlet-class>com.wzx.web.ResponseIOServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MainServlet</servlet-name>
+    <servlet-class>com.wzx.web.MainServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FileServlet</servlet-name>
+    <servlet-class>com.wzx.web.FileServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CookieServlet</servlet-name>
+    <servlet-class>com.wzx.web.CookieServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.wzx.web.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SessionServlet</servlet-name>
+    <servlet-class>com.wzx.web.SessionServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BaseServlet</servlet-name>
+    <servlet-class>com.wzx.web.BaseServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ResponseIOServlet</servlet-name>
+    <url-pattern>/responseIOServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MainServlet</servlet-name>
+    <url-pattern>/mainServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FileServlet</servlet-name>
+    <url-pattern>/fileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CookieServlet</servlet-name>
+    <url-pattern>/cookieServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/userServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SessionServlet</servlet-name>
+    <url-pattern>/sessionServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BaseServlet</servlet-name>
+    <url-pattern>/baseServlet</url-pattern>
+  </servlet-mapping>
+  <!--set default session time-->
+  <session-config>
+    <session-timeout>20</session-timeout>
+  </session-config>
+</web-app>
